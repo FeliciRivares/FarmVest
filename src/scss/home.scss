@@ -1,3 +1,125 @@
 //====================================================================================================
+.page {
+
+    // .page__main
+
+    &__main {
+    }
+}
+.main-block {
+
+    // .main-block__container
+
+    &__container {
+        position:relative;
+    }
+
+    // .main-block__content
+
+    &__content {
+        @include adaptiveValue("padding-top", 250, 100);
+        @include adaptiveValue("padding-bottom", 200, 30);
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+    }
+
+    // .main-block__title
+
+    &__title {
+        max-width: rem(750);
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 69, 30);
+        }
+    }
+
+    // .main-block__text
+
+    &__text {
+        display:inline-block;
+        font-weight: 400;
+        line-height: 180%;
+        text-align: center;
+        max-width: rem(570);
+        @include adaptiveValue("font-size", 18, 12);
+        &:not(:last-child) 
+            {
+                @include adaptiveValue("margin-bottom", 69, 30);
+            }
+    }
+
+    // .main-block__form
+
+    &__form {
+        @media (max-width: em(430)){
+            width: 100%;
+        }
+    }
+
+    // .main-block__icons
+
+    &__icons {
+    }
+}
+.title {
+}
+.form {
+
+    // .form__input
+
+    &__input {
+    }
+
+    // .form__button
+
+    &__button {
+    }
+}
+.button {
+}
+.icons-main-block {
+
+    // .icons-main-block__item
+
+    &__item {
+
+        // .icons-main-block__item_1
+
+        &_1 {
+        }
+
+        // .icons-main-block__item_2
+
+        &_2 {
+        }
+
+        // .icons-main-block__item_3
+
+        &_3 {
+        }
+
+        // .icons-main-block__item_4
+
+        &_4 {
+        }
+
+        // .icons-main-block__item_5
+
+        &_5 {
+        }
+
+        // .icons-main-block__item_6
+
+        &_6 {
+        }
+
+        // .icons-main-block__item_7
+
+        &_7 {
+        }
+    }
+}
 
 //====================================================================================================
