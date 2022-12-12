@@ -28,6 +28,24 @@
 		img{
 			max-width: 100%;
 		}
+		&::before,&::after{
+			content:'';
+			pointer-events: none;
+			position: absolute;
+			border-radius: 50%;
+			border: 1px solid white;
+			@include adaptiveValue("width",585,300);
+			@include adaptiveValue("height",585,300);
+			top: 0;
+			left: 0;
+		}
+		&::before{
+			transform: translate(calc(-50% + rem(28)), -55%);
+			
+		}
+		&::after{
+			transform: translate(calc(-50% - rem(27)), (calc(-50% + rem(40))));
+		}
 	}
 
 	// .header__menu

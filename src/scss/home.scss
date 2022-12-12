@@ -7,11 +7,13 @@
     }
 }
 .main-block {
-
+    &__container-big{
+        position: relative;
+    }
     // .main-block__container
 
     &__container {
-        position:relative;
+        // position:relative;
     }
 
     // .main-block__content
@@ -80,44 +82,60 @@
 .button {
 }
 .icons-main-block {
-
+    pointer-events: none;
     // .icons-main-block__item
 
     &__item {
+        position: absolute;
 
         // .icons-main-block__item_1
 
         &_1 {
+            // відсоток положення обєкту від висоти
+            top: percent(675,974);
+            left: rem(15);
         }
 
         // .icons-main-block__item_2
 
         &_2 {
+            top: percent(355,974);
+            left: percent(250,1620);
         }
 
         // .icons-main-block__item_3
 
         &_3 {
+            top: percent(757,974);
+            left: percent(395,1620);
         }
 
         // .icons-main-block__item_4
 
         &_4 {
+            top: percent(795,974);
+            left: percent(1330,1620);
         }
 
         // .icons-main-block__item_5
 
         &_5 {
+            top: percent(375,974);
+            left: percent(1580,1620);
         }
 
         // .icons-main-block__item_6
 
         &_6 {
+            top: percent(155,974);
+            left: percent(1160,1620);
         }
 
         // .icons-main-block__item_7
 
         &_7 {
+            top: percent(420,974);
+            left: percent(1320,1620);
         }
     }
 }
