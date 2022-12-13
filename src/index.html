@@ -3,33 +3,33 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Верстка «NEW_PROJECT_NAME»</title>
+		<title>«NEW_PROJECT_NAME»</title>
 	</head>
 	<body>
 		<div class="rootpage">
-			<h1>Верстка «NEW_PROJECT_NAME»</h1>
+			<h1>«NEW_PROJECT_NAME»</h1>
 			<div class="rootpage__info">
-				Особенности проекта
+				Features of the project
 			</div>
-			<h2>Готовые страницы:</h2>
+			<h2>Finished pages:</h2>
 			<ol class="rootpage__list">
-				<li><a target="_blank" href="home.html">Главная</a></li>
+				<li><a target="_blank" href="home.html">Main</a></li>
 			</ol>
-			<h2>Попапы:</h2>
+			<h2>Pop up:</h2>
 			<ol class="rootpage__list">
 				<li><a target="_blank" href="home.html#"></a></li>
 			</ol>
-			<div class="rootpage__tnx">
+			<!-- <div class="rootpage__tnx">
 				<h2>Спасибо за заказ!</h2>
 				<p>Буду рад (а) хорошему отзыву.</p>
 				<p>Обращайтесь еще!</p>
-			</div>
-			<div class="rootpage__contacts">
+			</div> -->
+			<!-- <div class="rootpage__contacts">
 				<h2>Мои контакты:</h2>
 				<p>Почта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
 				<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
 				<p>Соц. сеть: <a href="">ссылка на соц. сеть</a></p>
-			</div>
+			</div> -->
 		</div>
 	</body>
 	<style>
@@ -42,32 +42,33 @@
 			box-sizing: border-box; 
 		}
 		html, body {
-			height: 100%;
+			height: 100vh;
 			margin: 0;
 			padding: 0;
 			min-width: 320px;
-			width: 100%;
+			width: 100vw;
 			color: #fff;
-			background-color: #5e5373;
+			background-color: #70aae5;
 		}
 		body {
 			font-family: Montserrat;
 			font-size: 100%;
 			line-height: 1;
-			font-size: 1rem;
+			font-size: 2rem;
 		}
 		a {
 			text-decoration: underline;
-			color: #ebe691
+			color: #261572
 		}
 		a:visited {
 			text-decoration: underline;
-			color: #aaa768;
+			color: #441da5;
 		}
 			a:hover {
 			text-decoration: none;
 		}
 		ul li {
+			font-weight: 700;
 			list-style: none;
 		}
 		img {
@@ -79,19 +80,19 @@
 			overflow: hidden;
 		}
 		.rootpage{
-			padding: 30px;
+			padding: 50px;
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
 		}
 		@media (max-width: 767px) {
 			.rootpage{
-				padding:30px 15px;
+				padding:40px 20px;
 			}
 		}
 		h1 {
-			color: #ebe691;
-			font-size: 2.5rem;
+			color: #210d62;
+			font-size: 3.5rem;
 			margin: 0px 0px 1.25rem 0px;
 		}
 		@media (max-width: 767px) {
@@ -101,7 +102,7 @@
 			}
 		}
 		h2 {
-			color: #ebe691;
+			color: #dd0fba;
 			font-size: 1.25rem;
 			margin: 0px 0px 1rem 0px;
 		}
@@ -114,6 +115,9 @@
 		.rootpage__info{
 			line-height: 140%;
 			margin: 0px 0px 1.5rem 0px;
+		}
+		.rootpage__list li{
+			font-weight: 600;
 		}
 
 		.rootpage__list{
@@ -136,11 +140,11 @@
 		}
 		}
 		.rootpage__contacts{
-			background: #32b5a4;
+			background: #551880;
 			
 		}
 		.rootpage__contacts a{
-			color: #ebe691;
+			color: #e1e1dc;
 		}
 		.rootpage__tnx{
 			background: #c22d63;

@@ -7,8 +7,13 @@
 	z-index: 50;
 	@include adaptiveValue("padding-top", 60, 10);
 	@include adaptiveValue("padding-bottom",60, 10);
+	transition: all 0.3s ease 0s;
 	// .header__container-big
-
+	&._header-scroll{
+		padding-top: rem(20);
+		padding-bottom: rem(20);
+		background-color: rgba($color: $darkGreenColor, $alpha: .9);
+	}
 	&__container-big {
 		display: grid;
 		align-items: center;
@@ -28,24 +33,7 @@
 		img{
 			max-width: 100%;
 		}
-		&::before,&::after{
-			content:'';
-			pointer-events: none;
-			position: absolute;
-			border-radius: 50%;
-			border: 1px solid white;
-			@include adaptiveValue("width",585,300);
-			@include adaptiveValue("height",585,300);
-			top: 0;
-			left: 0;
-		}
-		&::before{
-			transform: translate(calc(-50% + rem(28)), -55%);
-			
-		}
-		&::after{
-			transform: translate(calc(-50% - rem(27)), (calc(-50% + rem(40))));
-		}
+		
 	}
 
 	// .header__menu
