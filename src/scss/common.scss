@@ -7,11 +7,13 @@
 	@include adaptiveValue("font-size",70 ,45);
     span{
         color: $greenColor;
-    }  
+    }
+    &_s64{
+        @include adaptiveValue("font-size",64 ,40);
+    } 
+    &_s56{
+        @include adaptiveValue("font-size",56 ,35);
+    } 
+
 }
 
-.page{
-    &__main{
-        
-    }
-}

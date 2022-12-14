@@ -5,6 +5,12 @@
 
     &__main {
     }
+    // .page__partners
+
+     &__partners {
+    }
+    &_how-works {
+    }
 }
 .main-block {
     &__container-big{
@@ -156,6 +162,112 @@
     }
 }
 
+.partners {
+    @include adaptiveValue("padding-bottom", 200,30);
+    // .partners__container
 
+    &__container {
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        gap: rem(30);
+        flex-wrap: wrap;
+        @media (max-width: em(1100)){
+            justify-content: center;
+              
+        }
+
+    }
+
+    // .partners__item
+
+    &__item {
+        text-align: center;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+
+
+//====================================================================================================
+
+.how-works {
+
+    // .how-works__container
+
+    &__container {
+    }
+
+    // .how-works__content
+
+    &__content {
+    }
+
+    // .how-works__title
+
+    &__title {
+    }
+
+    // .how-works__text
+
+    &__text {
+    }
+
+    // .how-works__image-block
+
+    &__image-block {
+    }
+}
+
+.text {
+}
+.how-work {
+
+    // .how-work__steps
+
+    &__steps {
+    }
+}
+.steps-how-work {
+
+    // .steps-how-work__item
+
+    &__item {
+    }
+
+    // .steps-how-work__icon
+
+    &__icon {
+    }
+
+    // .steps-how-work__body
+
+    &__body {
+    }
+
+    // .steps-how-work__title
+
+    &__title {
+    }
+
+    // .steps-how-work__text
+
+    &__text {
+    }
+}
+.image-block {
+
+    // .image-block__item
+
+    &__item {
+
+        // .image-block__item_ibg
+
+        &_ibg {
+        }
+    }
+}
 
 //====================================================================================================
