@@ -1,19 +1,16 @@
 //====================================================================================================
 .page {
-
-    // .page__main
-
     &__main {
     }
-    // .page__partners
-
-     &__partners {
+    &__partners {
     }
     &_how-works {
     }
     &__pathway {
     }
      &_choose {
+    }
+    &__app {
     }
 }
 .main-block {
@@ -700,6 +697,113 @@
     &__button {
     }
 }
+
+
+//====================================================================================================
+.app {
+    @include adaptiveValue("padding-bottom", 200,30);
+    // .app__container-big
+
+    &__container-big {
+    }
+
+    // .app__container
+
+    &__container {
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(255, 255, 255, 0.07);
+        border-radius: rem(20);
+        padding: 0 rem(10);
+        @include adaptiveValue("padding-top",72 , 50);
+        @include adaptiveValue("padding-bottom",64 , 40);
+        
+    }
+
+    // .app__content
+
+    &__content {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+        @include adaptiveValue("padding-bottom",48 , 30);
+
+    }
+
+    // .app__title
+
+    &__title {
+        max-width: rem(760);
+    }
+
+    // .app__items
+
+    &__items {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        gap: rem(24);
+        @media (max-width:$mobile){
+            flex-direction: column; 
+        }
+    }
+
+    // .app__item
+
+    &__item {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        img{
+            border-radius: rem(10);
+            height:57px;
+        }
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &__circle {
+        position: absolute;
+        @include adaptiveValue("width",585,400);
+        @include adaptiveValue("height",585,400);
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        &::before{
+            content:'';
+            display: block;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.37);
+            width: 100%;
+            height: 100%;
+
+        }
+        &-1{
+            &::before{
+                transform: translate(-50% , -50%);
+            }
+        }
+        &-2{
+            &::before{
+                transform: translate(-50% , -40%);
+            }
+            
+        }
+    }
+	
+}
+
+
+
+
+
+
+
+		
+
 
 
 //====================================================================================================
