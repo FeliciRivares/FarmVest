@@ -581,3 +581,125 @@
 
 
 //====================================================================================================
+.customers {
+    @include adaptiveValue("padding-bottom", 200,30);
+    // .customers__container-big
+
+    &__container-big {
+    }
+
+    // .customers__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    // .customers__title
+
+    &__title {
+        text-align: center;
+        padding-bottom:rem(32) ;
+    }
+
+    // .customers__reviews
+
+    &__reviews {
+    } 
+
+    &__text {
+        text-align: center;
+        margin: 0 auto;
+        max-width: rem(435);
+        line-height: 177%;
+        padding-bottom:rem(48);
+    }
+}
+
+
+
+.reviews-customers {
+    display: flex;
+    column-gap: rem(55);
+    padding-bottom: rem(48);
+    // .reviews-customers__item
+    @media (max-width: em(1230)){
+        flex-direction: column;
+        @include adaptiveValue("row-gap",55 ,40 );
+        
+    }
+    &__item {
+        display: flex;
+        width: 100%;
+        @media (max-width: em(560)){
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            
+        }
+        
+    }
+
+    // .reviews-customers__img
+
+    &__img {
+        
+        img{
+            max-width: 100%;
+            border-radius: rem(20) 0 0 rem(20);
+            @media (max-width: em(560)){
+                border-radius: rem(20);
+                
+            }
+            
+        }
+        @media (max-width: em(560)){
+            padding-bottom: rem(20);
+                
+            }
+    }
+
+    // .reviews-customers__text-block
+
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: rem(384);
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 0 rem(20) rem(20) 0;
+        @include adaptiveValue("padding",32 ,15);
+        @media (max-width: em(560)){
+            border-radius: rem(20);
+            max-width: 90%;
+            
+        }
+    }
+
+    // .reviews-customers__text
+
+    &__text {
+        line-height: math.div(32 ,18);
+        
+    }
+
+    // .reviews-customers__name
+
+    &__name {
+        @media (max-width: em(560)){
+            padding-top: rem(10);
+            text-align: end;
+            
+        }
+       
+    }
+
+    // .reviews-customers__button
+
+    &__button {
+    }
+}
+
+
+//====================================================================================================
