@@ -1,154 +1,294 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>«NEW_PROJECT_NAME»</title>
-	</head>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"FarmVest"
+	})
 	<body>
-		<div class="rootpage">
-			<h1>«NEW_PROJECT_NAME»</h1>
-			<div class="rootpage__info">
-				Features of the project
-			</div>
-			<h2>Finished pages:</h2>
-			<ol class="rootpage__list">
-				<li><a target="_blank" href="home.html">Main</a></li>
-			</ol>
-			<h2>Pop up:</h2>
-			<ol class="rootpage__list">
-				<li><a target="_blank" href="home.html#"></a></li>
-			</ol>
-			<!-- <div class="rootpage__tnx">
-				<h2>Спасибо за заказ!</h2>
-				<p>Буду рад (а) хорошему отзыву.</p>
-				<p>Обращайтесь еще!</p>
-			</div> -->
-			<!-- <div class="rootpage__contacts">
-				<h2>Мои контакты:</h2>
-				<p>Почта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-				<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-				<p>Соц. сеть: <a href="">ссылка на соц. сеть</a></p>
-			</div> -->
-		</div>
-	</body>
-	<style>
-		@charset "UTF-8";
-		@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-		* ,*::before, *::after {
-			padding: 0px;
-			margin: 0px;
-			border: 0px;
-			box-sizing: border-box; 
-		}
-		html, body {
-			height: 100vh;
-			margin: 0;
-			padding: 0;
-			min-width: 320px;
-			width: 100vw;
-			color: #fff;
-			background-color: #70aae5;
-		}
-		body {
-			font-family: Montserrat;
-			font-size: 100%;
-			line-height: 1;
-			font-size: 2rem;
-		}
-		a {
-			text-decoration: underline;
-			color: #261572
-		}
-		a:visited {
-			text-decoration: underline;
-			color: #441da5;
-		}
-			a:hover {
-			text-decoration: none;
-		}
-		ul li {
-			font-weight: 700;
-			list-style: none;
-		}
-		img {
-			vertical-align: top;
-		}
-		.wrapper {
-			width: 100%;
-			min-height: 100%;
-			overflow: hidden;
-		}
-		.rootpage{
-			padding: 50px;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-		}
-		@media (max-width: 767px) {
-			.rootpage{
-				padding:40px 20px;
-			}
-		}
-		h1 {
-			color: #210d62;
-			font-size: 3.5rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-		@media (max-width: 767px) {
-			h1 {
-				font-size: 1.85rem;
-				margin: 0px 0px 1.25rem 0px;
-			}
-		}
-		h2 {
-			color: #dd0fba;
-			font-size: 1.25rem;
-			margin: 0px 0px 1rem 0px;
-		}
-		@media (max-width: 767px) {
-			 h2 {
-				font-size: 1.125rem;
-				margin: 0px 0px 1rem 0px;
-			}
-		}
-		.rootpage__info{
-			line-height: 140%;
-			margin: 0px 0px 1.5rem 0px;
-		}
-		.rootpage__list li{
-			font-weight: 600;
-		}
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="page__main main-block">
+					<div class="main-block__container-big">
+					<div class="main-block__container">
+						<div class="main-block__content">
+						<h1 class="main-block__title title">
+							The easiest and fastest way to <span> Invest </span> in Agriculture
+						</h1>
+						<div class="main-block__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac etLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur 
+						</div>
+						<div class="main-block__form ">
+							<form action="#" class="form">
+								<input data-required="email" autocomplete="off" type="email" name="form[]" data-error="" placeholder="Enter your email" class="form__input">
+								<button type="submit" class="form__button button">Get Started</button>
+							</form>
+						</div>
+						</div>
+						<div class="main-block__icons icons-main-block">
+							<div data-prlx-mouse data-prlx-cx="300" data-prlx-cy="300" class="icons-main-block__circle icons-main-block__circle_1"></div>
+							<div data-prlx-mouse data-prlx-cx="300" data-prlx-cy="300" data-prlx-dxr data-prlx-dyr class="icons-main-block__circle icons-main-block__circle_2"></div>
+							<div data-prlx-mouse data-prlx-cx="5" data-prlx-cy="5" class="icons-main-block__item icons-main-block__item_1">
+								<img src="@img/main-block/icons/1.svg" alt="Icon">
+							</div>
+							<div data-prlx-mouse data-prlx-cx="1" data-prlx-cy="5" class="icons-main-block__item icons-main-block__item_2">
+								<img src="@img/main-block/icons/2.svg" alt="Icon">
+							</div>
+							<div data-prlx-mouse data-prlx-cx="6" data-prlx-cy="4"  class="icons-main-block__item icons-main-block__item_3">
+								<img src="@img/main-block/icons/3.svg" alt="Icon">
+							</div>
+							<div data-prlx-mouse data-prlx-cx="3" data-prlx-cy="5" class="icons-main-block__item icons-main-block__item_4">
+								<img src="@img/main-block/icons/4.svg" alt="Icon">
+							</div>
+							<div data-prlx-mouse data-prlx-cx="7" data-prlx-cy="6" class="icons-main-block__item icons-main-block__item_5">
+								<img src="@img/main-block/icons/5.svg" alt="Icon">
+							</div>
+							<div data-prlx-mouse data-prlx-cx="6" data-prlx-cy="3" class="icons-main-block__item icons-main-block__item_6">
+								<img src="@img/main-block/icons/6.svg" alt="Icon">
+							</div>
+							<div data-prlx-mouse data-prlx-cx="4" data-prlx-cy="5" class="icons-main-block__item icons-main-block__item_7">
+								<img src="@img/main-block/icons/7.svg" alt="Icon">
+							</div>
+						</div>
+					</div>
+					</div>
+				</section>
+				<div class="page__partners partners">
+					<div class="partners__container-big">
+					<div class="partners__container">
+						<div class="partners__item">
+							<img src="@img/partners/01.svg" alt="MarketWatch">
+						</div>
+						<div class="partners__item">
+							<img src="@img/partners/02.svg" alt="Forbes">
+						</div>
+						<div class="partners__item">
+							<img src="@img/partners/03.svg" alt="besines insider">
+						</div>
+						<div class="partners__item">
+							<img src="@img/partners/04.svg" alt="fibelity">
+						</div>
+						<div class="partners__item">
+							<img src="@img/partners/05.svg" alt="wired">
+						</div>
+					</div>
+					</div>
+				</div>
+				<section data-prlx-parent class="page_how-works how-works">
+					<div class="how-works__container-big">
+					<div class="how-works__container">
 
-		.rootpage__list{
-			margin: 0px 0px 2.25rem 1.25rem;
-		}
-		.rootpage__list li:not(:last-child){
-			margin: 0px 0px 15px 0px;
-		}
-		.rootpage__contacts,
-		.rootpage__tnx{
-			border-radius: 200px;
-			padding: 20px 65px;
-			line-height: 140%;
-		}
-		@media (max-width: 767px){
-		.rootpage__contacts,
-		.rootpage__tnx{
-			border-radius:40px;
-			padding: 20px;
-		}
-		}
-		.rootpage__contacts{
-			background: #551880;
-			
-		}
-		.rootpage__contacts a{
-			color: #e1e1dc;
-		}
-		.rootpage__tnx{
-			background: #c22d63;
-			margin: 0px 0px 1rem 0px;
-		}
-	</style>
+						<div class="how-works__content">
+							<h2 class="how-works__title title title_s64">How <span>FarmVest</span> Works</h2>
+							<div class="how-works__text text">
+								 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac etLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur </p>
+							</div>
+							<div class="how-work__steps steps-how-work">
+								<div class="steps-how-work__item">
+									<div class="steps-how-work__icon">
+										<img src="@img/how-works/1.svg" alt="icon">
+									</div>
+									<div class="steps-how-work__body">
+										<div class="steps-how-work__title">Download FarmVest</div>
+										<div class="steps-how-work__text text">Start by downloading FarmVest app
+											on your Android or IOS</div>
+									</div>
+								</div>
+								<div class="steps-how-work__item">
+									<div class="steps-how-work__icon">
+										<img src="@img/how-works/2.svg" alt="icon">
+									</div>
+									<div class="steps-how-work__body">
+										<div class="steps-how-work__title">Create account</div>
+										<div class="steps-how-work__text text">Start by downloading FarmVest app
+											on your Android or IOS</div>
+									</div>
+								</div>
+								<div class="steps-how-work__item">
+									<div class="steps-how-work__icon">
+										<img src="@img/how-works/3.svg" alt="icon">
+									</div>
+									<div class="steps-how-work__body">
+										<div class="steps-how-work__title">Link your bank account</div>
+										<div class="steps-how-work__text text">Start by downloading FarmVest app
+											on your Android or IOS</div>
+									</div>
+								</div>
+								<div class="steps-how-work__item">
+									<div class="steps-how-work__icon">
+										<img src="@img/how-works/4.svg" alt="icon">
+									</div>
+									<div class="steps-how-work__body">
+										<div class="steps-how-work__title">Start Investing</div>
+										<div class="steps-how-work__text text">Start by downloading FarmVest app
+											on your Android or IOS</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div data-prlx-parent  class="how-works__image image-block">
+							<div data-coefficient="50" data-prlx data-direction="-1" class="image-block__item">
+								<img src="@img/how-works/user.jpg" alt="user">
+							</div>
+
+						</div>
+					</div>
+				</div>
+				</section>
+				<section  class="pathway  page__pathway">
+					<div class="pathway__container-big">
+						<div class="pathway__container">
+							<div data-prlx-parent class="pathway__image image-block pathway__image-circle ">
+								<div data-coefficient="50" data-prlx data-direction="-1" class="image-block__item">
+									<img src="@img/pathway.jpg" alt="user">
+								</div>
+							</div>
+							<div class="pathway__content">
+								<h2 class="pathway__title title ">Your <span> pathway </span> to Future Investment</h2>
+								<div class="pathway__text text">
+									 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac etLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur </p>
+								</div>
+								<div data-spollers class="pathway__spollers spollers-pathway">
+									<div class="spollers-pathway__item">
+										<button type="button" data-spoller class="spollers-pathway__title">What is FarmVest?</button>
+										<div class="spollers-pathway__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nihil et laboriosam quibusdam dolorem! Corrupti temporibus assumenda ab fuga. Fugiat iusto dolore blanditiis. Delectus voluptas tempore sequi, mollitia iusto officia?
+										Alias tempore, eligendi illum dignissimos sapiente temporibus consequatur doloremque est magnam accusamus animi minima deleniti laudantium excepturi debitis odio numquam maiores ea ullam esse veniam! Provident tempora doloribus voluptatibus ipsum.
+										Rerum repudiandae perspiciatis nihil quaerat veniam beatae, soluta similique, cupiditate omnis aliquid, vero tempora officiis commodi blanditiis maiores. Distinctio alias magnam accusantium recusandae? Tempore pariatur commodi non similique rem quia.</div>
+									</div>
+									<div class="spollers-pathway__item">
+										<button type="button" data-spoller class="spollers-pathway__title">How safe is FarmVest</button>
+										<div class="spollers-pathway__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nihil et laboriosam quibusdam dolorem! Corrupti temporibus assumenda ab fuga. Fugiat iusto dolore blanditiis. Delectus voluptas tempore sequi, mollitia iusto officia?
+										Alias tempore, eligendi illum dignissimos sapiente temporibus consequatur doloremque est magnam accusamus animi minima deleniti laudantium excepturi debitis odio numquam maiores ea ullam esse veniam! Provident tempora doloribus voluptatibus ipsum.
+										Rerum repudiandae perspiciatis nihil quaerat veniam beatae, soluta similique, cupiditate omnis aliquid, vero tempora officiis commodi blanditiis maiores. Distinctio alias magnam accusantium recusandae? Tempore pariatur commodi non similique rem quia.</div>
+									</div>
+									<div class="spollers-pathway__item">
+										<button type="button" data-spoller class="spollers-pathway__title">What do I gain from using FarmVest?</button>
+										<div class="spollers-pathway__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nihil et laboriosam quibusdam dolorem! Corrupti temporibus assumenda ab fuga. Fugiat iusto dolore blanditiis. Delectus voluptas tempore sequi, mollitia iusto officia?
+										Alias tempore, eligendi illum dignissimos sapiente temporibus consequatur doloremque est magnam accusamus animi minima deleniti laudantium excepturi debitis odio numquam maiores ea ullam esse veniam! Provident tempora doloribus voluptatibus ipsum.
+										Rerum repudiandae perspiciatis nihil quaerat veniam beatae, soluta similique, cupiditate omnis aliquid, vero tempora officiis commodi blanditiis maiores. Distinctio alias magnam accusantium recusandae? Tempore pariatur commodi non similique rem quia.</div>
+									</div>
+								</div>
+								
+									
+								
+								
+							</div>
+						</div>
+					</div>
+				</section>
+				<section  class="page_choose choose">
+					<div class="choose__container-big">
+					<div class="choose__container">
+
+						<div class="choose__content">
+							<h2 class="choose__title title ">Why choose <span>FarmVest</span></h2>
+							<div class="choose__text text">
+								 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac</p>
+							</div>
+							<div class="choose__steps steps-choose">
+								<div class="steps-choose__item">
+									<div class="steps-choose__icon">
+										1
+									</div>
+									<div class="steps-choose__body">
+										<div class="steps-choose__text text">Real-time Checkup</div>
+									</div>
+								</div>
+								<div class="steps-choose__item">
+									<div class="steps-choose__icon">
+										2
+									</div>
+									<div class="steps-choose__body">
+										<div class="steps-choose__text text">Flexibility in Investment</div>
+									</div>
+								</div>
+								<div class="steps-choose__item">
+									<div class="steps-choose__icon">
+										3
+									</div>
+									<div class="steps-choose__body">
+										<div class="steps-choose__text text">Encrypted and Secured</div>
+									</div>
+								</div>
+								<div class="steps-choose__item">
+									<div class="steps-choose__icon">
+										4
+									</div>
+									<div class="steps-choose__body">
+										<div class="steps-choose__text text">Withdraw Anytime</div>
+									</div>
+								</div>
+								
+							</div>
+							<button class=" choose__button button">
+								Learn More
+							</button>
+							
+						</div>
+						<div data-prlx-parent  class="choose__image">
+								<img src="@img/choose.jpg" alt="user">
+						</div>
+					</div>
+				</div>
+				</section>
+				<section class="customers page__customers">
+					<div class="customers__container-big">
+						<div class="customers__container">
+							<div class="customers__title title">
+								What <span>Customers</span> have to say
+							</div>
+							<div class="customers__text text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac
+							</div>
+							<div class="customers__reviews reviews-customers">
+								<div class="reviews-customers__item">
+									<div class="reviews-customers__img">
+										<img src="@img/customers/user-1.jpg" alt="user">
+									</div>
+									<div class="reviews-customers__text-block">
+										<div class="reviews-customers__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac</div>
+										<div class="reviews-customers__name ">Tonia Smart</div>
+									</div>
+								</div>
+								<div class="reviews-customers__item">
+									<div class="reviews-customers__img">
+										<img src="@img/customers/user-2.jpg" alt="user">
+									</div>
+									<div class="reviews-customers__text-block">
+										<div class="reviews-customers__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac</div>
+										<div class="reviews-customers__name ">Tonia Smart</div>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="button reviews-customers__button">View All</button>
+						</div>
+					</div>
+				</section>
+				<section class="app page__app">
+					<div class="app__container-big">
+						<div class="app__container">
+							<div class="app__content">
+								<div class="app__title title title_s65">
+									Download <span>FarmVest app </span>and invest in your future
+								</div>
+							</div>
+							<div class="app__items">
+								<div class="app__item">
+									<img src="@img/app/store.jpg" alt="App Store">
+								</div>
+								<div class="app__item">
+									<img src="@img/app/store-1.jpg" alt="Google Play">
+								</div>
+							</div>
+							<div data-prlx-mouse data-prlx-cx="100" data-prlx-cy="100" class="app__circle app__circle-1"></div>
+							<div data-prlx-mouse data-prlx-cx="100" data-prlx-cy="100" data-prlx-dxr data-prlx-dyr class="app__circle app__circle-2"></div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
 </html>
